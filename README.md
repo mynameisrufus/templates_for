@@ -21,8 +21,15 @@ WidgetController < ActionController::Base
 end
 ```
 
-In our layout file:
+In our layout or view:
 
 ```erb
-<%= render_templates_for_view %>
+<%= templates_for_view %>
+```
+
+In our js:
+
+```javascript
+var nav     = Templates.get('nav');
+var details = Templates.get('details');
 ```

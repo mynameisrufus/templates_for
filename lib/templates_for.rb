@@ -7,6 +7,6 @@ module TemplatesFor
 end
 
 if defined?(::Rails)
-  require 'templates_for/railtie'
+  require 'templates_for/engine'
 end
 

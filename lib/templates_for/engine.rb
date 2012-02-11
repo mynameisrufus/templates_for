@@ -1,5 +1,5 @@
 module TemplatesFor
-  class Railtie < ::Rails::Railtie #:nodoc:
+  class Engine < Rails::Engine
     initializer 'templates_for' do |app|
       ActiveSupport.on_load(:action_view) do
         ::ActionView::Base.send :include, ::TemplatesFor::ActionView

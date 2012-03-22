@@ -8,7 +8,7 @@ structure would look like this:
 
     app/views/widgets/show.html.erb
 
-In our controller we have:
+### Controller
 
 ```ruby
 WidgetController < ActionController::Base
@@ -21,15 +21,24 @@ WidgetController < ActionController::Base
 end
 ```
 
-In our layout or view:
+### View
 
 ```erb
 <%= templates_for_view %>
 ```
 
-In our js:
+### Javascript
 
 ```javascript
-var nav     = Templates.get('nav');
-var details = Templates.get('details');
+var nav     = JST['nav'];
+var details = JST['details'];
+
+el = document.getElementById('my_elem');
+el.innerHTML = details({name: "Bob"});
 ```
+
+### Other libs
+
+eco (recommended): https://github.com/sstephenson/eco
+underscore.js: http://documentcloud.github.com/underscore/#template
+mustach.js: https://github.com/janl/mustache.js

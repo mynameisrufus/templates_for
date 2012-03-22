@@ -34,11 +34,13 @@ var nav     = JST['nav'];
 var details = JST['details'];
 
 el = document.getElementById('my_elem');
-el.innerHTML = details({name: "Bob"});
+el.innerHTML = Mustache.render(details, {name: "Bob"});
 ```
 
 ### Other libs
 
 eco (recommended): https://github.com/sstephenson/eco
+
 underscore.js: http://documentcloud.github.com/underscore/#template
+
 mustach.js: https://github.com/janl/mustache.js

@@ -8,6 +8,10 @@ structure would look like this:
 
     app/views/widgets/show.html.erb
 
+### Gemfile
+
+  gem 'sorted', '~> 0.0.1'
+
 ### Controller
 
 ```ruby

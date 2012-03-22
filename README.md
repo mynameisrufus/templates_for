@@ -8,7 +8,7 @@ structure would look like this:
 
     app/views/widgets/show.html.erb
 
-In the nav partial we might have:
+In the details template we might have:
 
 ```html
 <div class="details">

@@ -8,6 +8,14 @@ structure would look like this:
 
     app/views/widgets/show.html.erb
 
+In the nav partial we might have:
+
+```html
+<div class="details">
+  <p>{{name}}</p>
+</nav>
+```
+
 ### Gemfile
 
     gem 'sorted', '~> 0.0.1'

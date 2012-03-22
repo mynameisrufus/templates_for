@@ -10,7 +10,7 @@ structure would look like this:
 
 ### Gemfile
 
-  gem 'sorted', '~> 0.0.1'
+    gem 'sorted', '~> 0.0.1'
 
 ### Controller
 

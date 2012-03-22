@@ -18,7 +18,7 @@ In the details template we might have:
 
 ### Gemfile
 
-    gem 'sorted', '~> 0.0.1'
+    gem 'templates_for', '~> 0.0.1'
 
 ### Controller
 
